@@ -1,0 +1,38 @@
+aside {
+  float: left;
+  width: 200px;
+  background-color: #761e1e;
+  color: white;
+}
+aside nav {
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+aside ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+aside li {
+  margin-left: 0px;
+  text-align: center;
+  flex: 1;
+  justify-content: space-around;
+}
+aside li:hover {
+  background-color: black;
+}
+aside a {
+  display: inline-block;
+  padding: 40px;
+}
+aside a:link,
+aside a:visited {
+  color: white;
+  text-decoration: none;
+}
