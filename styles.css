@@ -69,13 +69,19 @@ header a:visited {
 #idiomas{
   box-sizing: border-box;
   height: 80vh;
-  text-align: center;
   padding-top: 20vh;
 }
 #idiomas li:hover{
-  padding:10px;
   box-sizing: border-box;
   font-size: large;
+}
+#idiomas ul{
+  display: flexbox;
+  flex-direction: column;
+}
+#idiomas li{
+  list-style-type:disc;
+  flex:1;
 }
 
 .flex-container {
