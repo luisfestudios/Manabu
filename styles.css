@@ -45,6 +45,7 @@ header a:visited {
 }
 
 #principal-izquierda {
+  height:90vh;
   background-color: #761e1e;
   color: white;
   padding-left: 60px;
@@ -52,7 +53,12 @@ header a:visited {
   font-family: Poppins;
 }
 #principal-izquierda * {
-  padding-top: 30px;
+  padding-top: 40px;
+}
+#principal-izquierda img{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 90px;
 }
 #principal-izquierda h2 {
   margin-top: 0px;
@@ -60,7 +66,9 @@ header a:visited {
   width: 400px;
   
 }
-
+#idiomas{
+  height: 80vh;
+}
 .flex-container {
   display: flex;
 }
