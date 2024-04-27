@@ -104,14 +104,15 @@ aside a:visited {
   border-style: solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
-  border-left-width:250px;
-  border-right-width:250px;
+  border-left-width:10vw;
+  border-right-width:100px;
   box-sizing: border-box;
   height: 100%;
   margin-top: 0px;
   color: white;
-  background-color:#a13131;
+  background-color:#922828;
   width: 100%;
+  min-width: 400px;
 
 }
 #caja *{
