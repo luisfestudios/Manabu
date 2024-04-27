@@ -67,8 +67,17 @@ header a:visited {
   
 }
 #idiomas{
+  box-sizing: border-box;
   height: 80vh;
+  text-align: center;
+  padding-top: 20vh;
 }
+#idiomas li:hover{
+  padding:10px;
+  box-sizing: border-box;
+  font-size: large;
+}
+
 .flex-container {
   display: flex;
 }
@@ -76,9 +85,7 @@ header a:visited {
   flex:1;
 }
 
-.contenedor{
-  display: flex;
-}
+
 
 footer{
   width: 100%;
