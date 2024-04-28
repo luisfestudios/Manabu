@@ -51,6 +51,7 @@ header a:visited {
   padding-left: 60px;
   padding-top: 10px;
   font-family: Poppins;
+  flex:1;
 }
 #principal-izquierda * {
   padding-top: 40px;
@@ -67,22 +68,51 @@ header a:visited {
   
 }
 #idiomas{
-  box-sizing: border-box;
-  height: 80vh;
-  padding-top: 20vh;
+  min-height: 90vh;
 }
 #idiomas li:hover{
   box-sizing: border-box;
-  font-size: large;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
 }
-#idiomas ul{
-  display: flexbox;
+#lista_idiomas{
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display:flex ;
+}
+
+#lista_idiomas li{
+  width: 1px;
 }
 #idiomas li{
-  list-style-type:disc;
+  list-style-type:none;
   flex:1;
 }
+#destacados{
+  margin-top: 5rem;
+  box-sizing: border-box;
+  text-align: center;
+  flex:2;
+}
+.galeria{
+  padding-left: 5rem; 
+  padding-right:5rem ;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(8rem,1fr));
+  grid-template-rows: auto auto;
+  overflow: hidden;
+}
+.featured{
+  grid-column: span 1;
+  background-color: #761e1e;
+  border-radius: 7%;
+  height: 10rem;
+}
+
 
 .flex-container {
   display: flex;
@@ -129,6 +159,3 @@ footer p{
   color: rgb(187, 187, 187);
 }
 
-#lista_idiomas{
-  display:flex ;
-}
