@@ -56,6 +56,13 @@ header a:visited {
   font-weight: 400;
   font-style: normal;
 }
+.btn {
+  background-color: black;
+  border: black;
+}
+.btn:hover {
+  background-color: grey;
+}
 aside {
   float: left;
   max-width: 200px;
@@ -120,8 +127,8 @@ aside a:visited {
 }
 #caja * {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 #caja input {
   padding: 0px;
