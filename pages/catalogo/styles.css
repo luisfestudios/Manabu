@@ -12,14 +12,22 @@ body {
 .flex-container {
   display: flex;
 }
-.flex-container div {
+.flex-container div,
+.flex-container section {
   flex: 1;
+}
+h1 {
+  text-align: center;
 }
 ul {
   list-style-type: none;
 }
 * {
   margin: 0px;
+}
+header {
+  font-size: large;
+  font-family: Poppins;
 }
 .cabecera {
   background-color: rgb(19, 19, 19);
@@ -47,8 +55,6 @@ header a:link,
 header a:visited {
   color: white;
   text-decoration: none;
-  font-size: large;
-  font-family: Poppins;
 }
 
 .poppins-regular {
@@ -62,7 +68,7 @@ aside {
   background-color: #761e1e;
   color: white;
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
 }
 
 aside ul {
@@ -126,21 +132,26 @@ footer p {
   color: rgb(187, 187, 187);
 }
 .btn-primary {
+  border: black !important;
   background-color: rgb(31, 31, 31) !important;
   font-size: small !important;
 }
 .btn-primary:hover {
   background-color: grey !important;
 }
-
-.galeria {
+#filtros {
+  padding-left: 10px;
+}
+#galeria {
+  flex: 5;
+  box-sizing: border-box;
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 
   overflow: hidden;
 }
-.galeria img {
+#galeria img {
   display: block;
   max-height: 8rem;
   max-width: 10rem;
