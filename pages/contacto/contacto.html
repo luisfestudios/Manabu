@@ -48,7 +48,7 @@
       <div class="subcontenido" id="formulario">
         <div id="caja">
           <h1>Contáctanos</h1>
-          <form action="#" method="post">
+          <form id="miFormulario" novalidate action="#" method="post">
             <div>
               <label for="nombre">Nombre</label>
               <input type="text" name="nombre" id="nombre" />
@@ -61,7 +61,12 @@
 
             <div>
               <label for="email">Correo</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="mail" id="mail" minlength="8" />
+              <span
+                style="display: block"
+                class="error"
+                aria-live="polite"
+              ></span>
             </div>
 
             <div>
@@ -85,5 +90,6 @@
       </nav>
       <p>Copyright &copy; 2024</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
