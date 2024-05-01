@@ -4,6 +4,7 @@ const emailError = document.querySelector("#mail + span.error");
 const nombre = document.getElementById("nombre");
 const apellido = document.getElementById("apellido");
 const mensaje = document.getElementById("mensaje");
+let verificar =0;
 email.addEventListener("input", (event) => {
     
   
@@ -16,18 +17,25 @@ email.addEventListener("input", (event) => {
   });
   
   form.addEventListener("submit", (event) => {
+    verificar=0;
     if (email.value === "" || !email.validity.valid) {
         correoInvalido();
         event.preventDefault();
+        verificar++;
       }
     if(nombre.value==="" || apellido.value==="" || mensaje.value==="" || email.value===""){
       mostrarError();
-    }
+      verificar++;
       event.preventDefault();
+    }
+    if (verificar ==0){
+      alert("Solicitud enviada correctamente.");
+    }
   });
   
   function mostrarError(){
     alert("Todos los campos deben ser rellenados.");
+    
   }
 
   function correoInvalido() {
