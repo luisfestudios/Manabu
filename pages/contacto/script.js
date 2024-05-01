@@ -30,9 +30,19 @@ email.addEventListener("input", (event) => {
     }
     if (verificar ==0){
       alert("Solicitud enviada correctamente.");
+      limpiar();
+      event.preventDefault();
+
     }
   });
-  
+  function limpiar(){
+    email.value="";
+    emailError.value="";
+    mensaje.value="";
+    nombre.value="";
+    apellido.value="";
+  };
+
   function mostrarError(){
     alert("Todos los campos deben ser rellenados.");
     
