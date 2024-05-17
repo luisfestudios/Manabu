@@ -2,6 +2,12 @@
 <html lang="es">
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,43 +32,138 @@
             <li><a href="./pages/contacto/contacto.html">Contacto</a></li>
           </ul>
         </nav>
+        <button
+          style="
+            margin-left: 1vw;
+            margin-top: 2vh;
+            border-color: grey;
+            background-color: grey;
+          "
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas"
+        >
+          &#9776;
+        </button>
       </header>
       <div class="flex-container">
-        <section id="principal-izquierda">
-          <article>
-            <img src="./images/manabu-logo.png" alt="" />
-            <h2>Recursos para el aprendizaje de lenguas extranjeras</h2>
-            <h4>Libros para el aprendizaje de lenguas extranjeras</h4>
-            <h4>Novelas en lenguas extranjeras</h4>
-          </article>
-        </section>
-        <div>
-          <img src="./images/principal-derecha.png" alt="" />
-        </div>
-      </div>
-      <section id="idiomas" class="flex-container">
-        <div id="lista_idiomas">
-          <ul>
-            <li><h3>Inglés</h3></li>
-            <li><h3>Portugués</h3></li>
-            <li><h3>Francés</h3></li>
-            <li><h3>Japonés</h3></li>
-            <li><h3>Chino</h3></li>
-            <li><h3>Coreano</h3></li>
-          </ul>
-        </div>
-        <div id="destacados">
-          <h2>Libros destacados</h2>
-          <div class="galeria">
-            <div class="featured">Ejemplo</div>
-            <div class="featured">Ejemplo</div>
-            <div class="featured">Ejemplo</div>
-            <div class="featured">Ejemplo</div>
-            <div class="featured">Ejemplo</div>
-            <div class="featured">Ejemplo</div>
+        <div
+          class="offcanvas offcanvas-start w-25"
+          tabindex="-1"
+          id="offcanvas"
+          data-bs-keyboard="false"
+          data-bs-backdrop="false"
+        >
+          <div class="offcanvas-header" style="max-height: 10vh !important">
+            <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">
+              Bolsa de valores
+            </h6>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body px-0">
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <p href="#" class="nav-link">
+                  <i class="fs-5 bi-house"></i
+                  ><span class="ms-1 d-none d-sm-inline"
+                    >El valor del dolar en pesos chilenos es:</span
+                  >
+                </p>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="font-weight: bold">
+                  <i class="fs-5 bi-house"></i
+                  ><span id="dolarclp" class="ms-1 d-none d-sm-inline"
+                    >Si ves esto, no hay conección con la API. Revisa tu
+                    conección a internet.</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <p href="#" class="nav-link">
+                  <i class="fs-5 bi-house"></i
+                  ><span class="ms-1 d-none d-sm-inline"
+                    >El valor del euro en pesos chilnos es:</span
+                  >
+                </p>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="font-weight: bold">
+                  <i class="fs-5 bi-house"></i
+                  ><span id="euroclp" class="ms-1 d-none d-sm-inline"
+                    >Si ves esto, no hay conección con la API. Revisa tu
+                    conección a internet</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <p href="#" class="nav-link">
+                  <i class="fs-5 bi-house"></i
+                  ><span class="ms-1 d-none d-sm-inline"
+                    >El valor de la libra esterlina en pesos chilnos es:</span
+                  >
+                </p>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="font-weight: bold">
+                  <i class="fs-5 bi-house"></i
+                  ><span id="libraclp" class="ms-1 d-none d-sm-inline"
+                    >Si ves esto, no hay conección con la API. Revisa tu
+                    conección a internet</span
+                  >
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div>
+          <div class="flex-container">
+            <section id="principal-izquierda">
+              <article>
+                <img src="./images/manabu-logo.png" alt="" />
+                <h2>Recursos para el aprendizaje de lenguas extranjeras</h2>
+                <h4>Libros para el aprendizaje de lenguas extranjeras</h4>
+                <h4>Novelas en lenguas extranjeras</h4>
+              </article>
+            </section>
+            <div>
+              <img src="./images/principal-derecha.png" alt="" />
+            </div>
+          </div>
+          <section id="idiomas" class="flex-container">
+            <div id="lista_idiomas">
+              <ul>
+                <li><h3>Inglés</h3></li>
+                <li><h3>Portugués</h3></li>
+                <li><h3>Francés</h3></li>
+                <li><h3>Japonés</h3></li>
+                <li><h3>Chino</h3></li>
+                <li><h3>Coreano</h3></li>
+              </ul>
+            </div>
+            <div id="destacados">
+              <h2>Libros destacados</h2>
+              <div class="galeria">
+                <div class="featured">Ejemplo</div>
+                <div class="featured">Ejemplo</div>
+                <div class="featured">Ejemplo</div>
+                <div class="featured">Ejemplo</div>
+                <div class="featured">Ejemplo</div>
+                <div class="featured">Ejemplo</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
     <footer>
       <nav>
@@ -75,5 +176,11 @@
       </nav>
       <p>Copyright &copy; 2024</p>
     </footer>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
